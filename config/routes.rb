@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   #get 'books/new' new_book
   #get 'books/index' books
   #get 'books/show' book
-  resources :books, only: [:new, :create, :index, :show, :edit, :update, :destroy]
+  resources :books
   
   #get 'users/show' user
   #get 'users/edit' edit_user
-  resources :users, only: [:index, :show, :edit, :update]
+  resources :users
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

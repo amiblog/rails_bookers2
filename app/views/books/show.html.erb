@@ -1,3 +1,7 @@
+<%= render 'users/user', user: @user%>
+<%= render 'books/book', book: @newbook%>
+
+
 <h1>Book details</h1>
 <%= link_to user_path(@book.user.id) do%>
 <p><%= image_tag @book.user.get_profile_image("40x40")%><br>

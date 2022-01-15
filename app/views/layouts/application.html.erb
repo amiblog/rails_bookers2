@@ -25,6 +25,7 @@
         <li><%= link_to "Sign in", new_user_session_path%></li>
       <%end%>
     </header>
+    <p><%= flash[:notice] %></p>
     <%= yield %>
     
     <footer>
