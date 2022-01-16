@@ -9,6 +9,6 @@
     <p><%= image_tag book.user.get_profile_image("40x40")%></p>
   <%end%>
   <p>Title:<%= link_to book.title, book_path(book.id)%></p>
-  <p>Opinion:<%= book.opinion%></p>
+  <p>Opinion:<%= book.body%></p>
 </div>
 <%end%>
