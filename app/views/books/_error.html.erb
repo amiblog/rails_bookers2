@@ -1,12 +1,14 @@
 <%if some.errors.any?%>
-<div class = "error_explanation">
+<div class="text-danger">
+ <div id = "error_explanation">
+      
+      <h3><%= some.errors.count%> errors prohibited this obj from being saved:</h3>
+        <ul>
+          <% some.errors.full_messages.each do |message|%>
+          <li><%= message%></li>
+          <%end%>
+        </ul>
   
-  <h3><%= some.errors.count%> errors prohibited this obj from being saved:</h3>
-    <ul>
-      <% some.errors.full_messages.each do |message|%>
-      <li><%= message%></li>
-      <%end%>
-    </ul>
-  
+  </div>
 </div>
 <%end%>
